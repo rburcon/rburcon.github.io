@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>isopletas</name>
+	<Icon>
+		<href>isopletas2-sf.png</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>10.32215748816708</north>
+		<south>-37.00821334385837</south>
+		<east>-32.25018253101785</east>
+		<west>-74.79087194814699</west>
+		<rotation>-2.419588565826416</rotation>
+	</LatLonBox>
+</GroundOverlay>
+</kml>
