@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Projetos - Engenheiro Reinaldo Burcon</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000; /* fundo preto */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #1f4e79;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            width: 100%;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .main-content {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+
+        .buttons-container {
+            width: 300px;
+            background-color: #0d0d0d;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+            overflow-y: auto;
+            height: calc(100vh - 180px);
+            position: sticky;
+            top: 0;
+        }
+
+        .content-area {
+            flex: 1;
+            padding: 20px;
+            background-color: #121212;
+        }
+
+        .card {
+            background-color: #1a1a1a; /* card escuro para contraste */
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(41, 122, 204, 0.2);
+            background-color: #222;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.1em;
+            color: #4a8bd6;
+        }
+
+        .card a {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #1f4e79;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+            font-size: 0.9em;
+        }
+
+        .card a:hover {
+            background-color: #2c6cb0;
+        }
+
+        iframe {
+            width: 100%;
+            height: calc(100vh - 200px);
+            border: 1px solid #333;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        footer {
+            background-color: #1f4e79;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .buttons-container {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding: 15px;
+            }
+            
+            .content-area {
+                padding: 15px;
+            }
+            
+            iframe {
+                height: 400px;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Ferramentas de Projeto para Mesas Fotovoltaicas</h1>
+      <p> Aqui você encontra aplicativos interativos que auxiliam no dimensionamento e análise de usinas fotovoltaicas. As ferramentas foram desenvolvidas para tornar os cálculos mais rápidos, confiáveis e práticos, apoiando engenheiros, projetistas e técnicos na tomada de decisão. </p>
+    </header>
+    
+    <div class="main-content">
+      <div class="buttons-container">
+        <div class="card">
+          <h2>Carga Estática Equivalente </h2>
+          <a href="forca-vento.html" target="_blank">Acessar</a>
+        </div>
+        <div class="card">
+          <h2>Colapso de Vorticidade</h2>
+          <a href="frequencia_colapso_vorticidade.html" target="_blank">Acessar</a>
+        </div>
+        <div class="card">
+          <h2>Apps Auxiliares</h2>
+          <a href="https://rburcon.github.io/portfolio/" target="_blank">Acessar</a>
+        </div>
+        
+      </div>
+      
+      <div class="content-area">
+        <iframe 
+          src="mesa.html" 
+          title="Conteúdo embutido do meu site">
+        </iframe>
+      </div>
+    </div>
+    
+    <footer> 
+      © 2025 Reinaldo Burcon - Todos os direitos reservados - rburcon@gmail.com 
+    </footer>
+  </body>
+</html>
